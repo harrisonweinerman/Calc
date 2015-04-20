@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6751" systemVersion="14D131" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--welcome-->
+        <scene sceneID="Kc2-ES-Zod">
+            <objects>
+                <controller identifier="welcome" id="6W1-Mm-nIC">
+                    <items>
+                        <label width="131.5" height="29.5" alignment="left" text="Welcome to Calc" id="JNh-RX-vYv">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <label width="131.5" height="46.5" alignment="left" text="Tap a number to type it." numberOfLines="0" id="Qqq-BZ-rKe">
+                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                        </label>
+                        <imageView width="64" height="80" alignment="center" image="Numbers" id="lcj-o2-hJ9"/>
+                        <label width="131.5" height="46.5" alignment="left" text="Press firmly to access operators." numberOfLines="0" id="2XS-Gg-miN">
+                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                        </label>
+                        <imageView width="64" height="80" alignment="center" image="Operators" id="SfB-9M-gQw"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-74" y="554"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Calc_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="center" verticalAlignment="bottom" id="vmk-pu-iSY">
+                            <items>
+                                <button width="42" height="34" alignment="center" verticalAlignment="center" title="7" id="bhI-so-N1F">
+                                    <color key="backgroundColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" weight="thin" pointSize="35"/>
+                                    <variation key="device=watch42mm" height="40" width="48"/>
+                                    <connections>
+                                        <action selector="addSeven" destination="AgC-eL-Hgc" id="b2k-Y9-dnT"/>
+                                    </connections>
+                                </button>
+                                <button width="42" height="34" alignment="center" verticalAlignment="center" title="8" id="5mG-eX-4ZT">
+                                    <color key="backgroundColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" weight="thin" pointSize="35"/>
+                                    <variation key="device=watch42mm" height="40" width="48"/>
+                                    <connections>
+                                        <action selector="addEight" destination="AgC-eL-Hgc" id="4y4-GI-CNm"/>
+                                    </connections>
+                                </button>
+                                <button width="42" height="34" alignment="center" verticalAlignment="center" title="9" id="8yG-Zx-FAb">
+                                    <color key="backgroundColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" weight="thin" pointSize="35"/>
+                                    <variation key="device=watch42mm" height="40" width="48"/>
+                                    <connections>
+                                        <action selector="addNine" destination="AgC-eL-Hgc" id="Xlk-BV-jBF"/>
+                                    </connections>
+                                </button>
+                            </items>
+                            <variation key="device=watch38mm">
+                                <mask key="items">
+                                    <include reference="bhI-so-N1F"/>
+                                    <include reference="5mG-eX-4ZT"/>
+                                    <include reference="8yG-Zx-FAb"/>
+                                </mask>
+                            </variation>
+                        </group>
+                        <group width="1" alignment="center" verticalAlignment="bottom" id="AsA-cd-c7k">
+                            <items>
+                                <button width="42" height="34" alignment="center" verticalAlignment="center" title="4" id="Ond-mm-Obf">
+                                    <color key="backgroundColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" weight="thin" pointSize="35"/>
+                                    <variation key="device=watch42mm" height="40" width="48"/>
+                                    <connections>
+                                        <action selector="addFour" destination="AgC-eL-Hgc" id="dk8-f6-iZV"/>
+                                    </connections>
+                                </button>
+                                <button width="42" height="34" alignment="center" verticalAlignment="center" title="5" id="2C3-5y-8cv">
+                                    <color key="backgroundColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" weight="thin" pointSize="35"/>
+                                    <variation key="device=watch42mm" height="40" width="48"/>
+                                    <connections>
+                                        <action selector="addFive" destination="AgC-eL-Hgc" id="2MP-Vd-b4b"/>
+                                    </connections>
+                                </button>
+                                <button width="42" height="34" alignment="center" verticalAlignment="center" title="6" id="ozp-bJ-AdI">
+                                    <color key="backgroundColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" weight="thin" pointSize="35"/>
+                                    <variation key="device=watch42mm" height="40" width="48"/>
+                                    <connections>
+                                        <action selector="addSix" destination="AgC-eL-Hgc" id="Imb-sK-6fW"/>
+                                    </connections>
+                                </button>
+                            </items>
+                            <variation key="device=watch38mm">
+                                <mask key="items">
+                                    <include reference="Ond-mm-Obf"/>
+                                    <include reference="2C3-5y-8cv"/>
+                                    <include reference="ozp-bJ-AdI"/>
+                                </mask>
+                            </variation>
+                        </group>
+                        <group width="1" alignment="center" verticalAlignment="bottom" id="xrn-Ve-gV5">
+                            <items>
+                                <button width="42" height="34" alignment="center" verticalAlignment="center" title="1" id="sll-zy-jSL">
+                                    <color key="backgroundColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" weight="thin" pointSize="35"/>
+                                    <variation key="device=watch42mm" height="40" width="48"/>
+                                    <connections>
+                                        <action selector="addOne" destination="AgC-eL-Hgc" id="Q1D-0e-7XO"/>
+                                    </connections>
+                                </button>
+                                <button width="42" height="34" alignment="center" verticalAlignment="center" title="2" id="54r-WU-Qoj">
+                                    <color key="backgroundColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" weight="thin" pointSize="35"/>
+                                    <variation key="device=watch42mm" height="40" width="48"/>
+                                    <connections>
+                                        <action selector="addTwo" destination="AgC-eL-Hgc" id="CeM-nC-Mxf"/>
+                                    </connections>
+                                </button>
+                                <button width="42" height="34" alignment="center" verticalAlignment="center" title="3" id="QZ4-xx-VXL">
+                                    <color key="backgroundColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" weight="thin" pointSize="35"/>
+                                    <variation key="device=watch42mm" height="40" width="48"/>
+                                    <connections>
+                                        <action selector="addThree" destination="AgC-eL-Hgc" id="eDk-hb-nCG"/>
+                                    </connections>
+                                </button>
+                            </items>
+                            <variation key="device=watch38mm">
+                                <mask key="items">
+                                    <include reference="54r-WU-Qoj"/>
+                                    <include reference="QZ4-xx-VXL"/>
+                                </mask>
+                            </variation>
+                        </group>
+                        <group width="1" alignment="center" verticalAlignment="bottom" id="ZGr-QG-f5L">
+                            <items>
+                                <button width="22" height="34" alignment="center" verticalAlignment="center" title="C" id="pWx-ee-J0R">
+                                    <color key="backgroundColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" weight="thin" pointSize="17"/>
+                                    <variation key="device=watch42mm" height="40" width="24"/>
+                                    <connections>
+                                        <action selector="deleteAxn" destination="AgC-eL-Hgc" id="nLf-Y8-J3S"/>
+                                    </connections>
+                                </button>
+                                <button width="22" height="34" alignment="center" verticalAlignment="center" title="." id="AtP-eC-hjT">
+                                    <color key="backgroundColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" weight="thin" pointSize="35"/>
+                                    <variation key="device=watch42mm" height="40" width="24"/>
+                                    <connections>
+                                        <action selector="addDecimal" destination="AgC-eL-Hgc" id="y0I-tO-BVn"/>
+                                    </connections>
+                                </button>
+                                <button width="42" height="34" alignment="center" verticalAlignment="center" title="0" id="Gk7-KM-Y8J">
+                                    <color key="backgroundColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" weight="thin" pointSize="35"/>
+                                    <variation key="device=watch42mm" height="40" width="48"/>
+                                    <connections>
+                                        <action selector="addZero" destination="AgC-eL-Hgc" id="Uay-GL-xHG"/>
+                                    </connections>
+                                </button>
+                                <button width="42" height="34" alignment="center" verticalAlignment="center" title="=" id="uFE-Hz-19I">
+                                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" weight="thin" pointSize="35"/>
+                                    <variation key="device=watch42mm" height="40" width="48"/>
+                                    <connections>
+                                        <action selector="equals" destination="AgC-eL-Hgc" id="WTk-53-5kh"/>
+                                    </connections>
+                                </button>
+                            </items>
+                            <variation key="device=watch38mm">
+                                <mask key="items">
+                                    <include reference="pWx-ee-J0R"/>
+                                    <include reference="AtP-eC-hjT"/>
+                                    <include reference="Gk7-KM-Y8J"/>
+                                </mask>
+                            </variation>
+                        </group>
+                    </items>
+                    <menu key="menu" id="uQ0-wD-1mX">
+                        <items>
+                            <menuItem title="Add" icon="add" id="utA-Y6-Qse">
+                                <connections>
+                                    <action selector="add" destination="AgC-eL-Hgc" id="GPc-i8-PgW"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Subtract" image="Subtract" id="bGm-aG-DIz">
+                                <connections>
+                                    <action selector="subtract" destination="AgC-eL-Hgc" id="tnn-3C-ypv"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Multiply" icon="decline" id="GZr-EP-z5P">
+                                <connections>
+                                    <action selector="multiply" destination="AgC-eL-Hgc" id="BSl-xd-lqN"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Divide" image="Divide" id="Kag-z2-ZbP">
+                                <connections>
+                                    <action selector="divide" destination="AgC-eL-Hgc" id="aD7-VP-gTC"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="decimal" destination="AtP-eC-hjT" id="pBC-ed-Ahv"/>
+                        <outlet property="delete" destination="pWx-ee-J0R" id="1em-RT-Gox"/>
+                        <outlet property="eight" destination="5mG-eX-4ZT" id="rzZ-Rl-04t"/>
+                        <outlet property="five" destination="2C3-5y-8cv" id="iGS-jv-QxJ"/>
+                        <outlet property="four" destination="Ond-mm-Obf" id="6Dt-sp-JBj"/>
+                        <outlet property="nine" destination="8yG-Zx-FAb" id="UY7-tj-5O4"/>
+                        <outlet property="one" destination="sll-zy-jSL" id="5Om-Zh-zj0"/>
+                        <outlet property="seven" destination="bhI-so-N1F" id="mKw-bq-pig"/>
+                        <outlet property="six" destination="ozp-bJ-AdI" id="UYj-Iu-PoI"/>
+                        <outlet property="three" destination="QZ4-xx-VXL" id="1sq-Bk-y2R"/>
+                        <outlet property="two" destination="54r-WU-Qoj" id="U6L-nO-HRp"/>
+                        <outlet property="zero" destination="Gk7-KM-Y8J" id="GId-MX-2DH"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>

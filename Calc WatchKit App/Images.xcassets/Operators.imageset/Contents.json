@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "scale" : "1x",
+      "filename" : "iOS Simulator Screen Shot - Apple Watch Apr 20, 2015, 1.11.37 PM.png"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x",
+      "filename" : "iOS Simulator Screen Shot - Apple Watch Apr 20, 2015, 1.11.37 PM-1.png"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x",
+      "filename" : "iOS Simulator Screen Shot - Apple Watch Apr 20, 2015, 1.11.37 PM-2.png"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}
