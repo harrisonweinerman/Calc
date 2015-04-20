@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84011ADF1AE5B4EC00EBDC31 /* Calc.png in Resources */ = {isa = PBXBuildFile; fileRef = 84011ADE1AE5B4EC00EBDC31 /* Calc.png */; };
 		8426AE411ADF19BB00832CE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426AE401ADF19BB00832CE4 /* AppDelegate.swift */; };
 		8426AE431ADF19BB00832CE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426AE421ADF19BB00832CE4 /* ViewController.swift */; };
 		8426AE461ADF19BB00832CE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8426AE441ADF19BB00832CE4 /* Main.storyboard */; };
@@ -14,7 +15,6 @@
 		8426AE4B1ADF19BB00832CE4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8426AE491ADF19BB00832CE4 /* LaunchScreen.xib */; };
 		8426AE571ADF19BB00832CE4 /* CalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426AE561ADF19BB00832CE4 /* CalcTests.swift */; };
 		8426AE691ADF19D000832CE4 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8426AE681ADF19D000832CE4 /* InterfaceController.swift */; };
-		8426AE6B1ADF19D000832CE4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8426AE6A1ADF19D000832CE4 /* Images.xcassets */; };
 		8426AE6F1ADF19D000832CE4 /* Calc WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 8426AE6E1ADF19D000832CE4 /* Calc WatchKit App.app */; };
 		8426AE771ADF19D000832CE4 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8426AE751ADF19D000832CE4 /* Interface.storyboard */; };
 		8426AE791ADF19D000832CE4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8426AE781ADF19D000832CE4 /* Images.xcassets */; };
@@ -67,6 +67,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		84011ADE1AE5B4EC00EBDC31 /* Calc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Calc.png; path = "Calc WatchKit Extension/Calc.png"; sourceTree = "<group>"; };
 		8426AE3B1ADF19BB00832CE4 /* Calc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8426AE3F1ADF19BB00832CE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8426AE401ADF19BB00832CE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,7 +81,6 @@
 		8426AE641ADF19D000832CE4 /* Calc WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Calc WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8426AE671ADF19D000832CE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8426AE681ADF19D000832CE4 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
-		8426AE6A1ADF19D000832CE4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8426AE6E1ADF19D000832CE4 /* Calc WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Calc WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8426AE741ADF19D000832CE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8426AE761ADF19D000832CE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -129,6 +129,7 @@
 				8426AE651ADF19D000832CE4 /* Calc WatchKit Extension */,
 				8426AE721ADF19D000832CE4 /* Calc WatchKit App */,
 				8426AE3C1ADF19BB00832CE4 /* Products */,
+				84011ADE1AE5B4EC00EBDC31 /* Calc.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -191,7 +192,6 @@
 			children = (
 				84BE77071AE1E57F009179AB /* Calc WatchKit Extension.entitlements */,
 				8426AE681ADF19D000832CE4 /* InterfaceController.swift */,
-				8426AE6A1ADF19D000832CE4 /* Images.xcassets */,
 				8426AE661ADF19D000832CE4 /* Supporting Files */,
 			);
 			path = "Calc WatchKit Extension";
@@ -332,6 +332,7 @@
 					};
 					8426AE6D1ADF19D000832CE4 = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 899JT6PKT3;
 					};
 				};
 			};
@@ -381,7 +382,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8426AE6B1ADF19D000832CE4 /* Images.xcassets in Resources */,
+				84011ADF1AE5B4EC00EBDC31 /* Calc.png in Resources */,
 				8426AE6F1ADF19D000832CE4 /* Calc WatchKit App.app in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -492,6 +493,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -534,6 +536,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -561,6 +564,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Calc/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -576,6 +580,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Calc/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

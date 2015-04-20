@@ -34,6 +34,9 @@ class ViewController: UIViewController {
         currentlyTyped = "0"
         operatorIsSelected = false
         triedToDivideByZero = false
+        
+        UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: true)
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -133,7 +136,7 @@ class ViewController: UIViewController {
         divideButton.layer.borderWidth = 0
 
         
-        var text = (sender as UIButton).titleLabel?.text
+        var text = (sender as! UIButton).titleLabel?.text
         
         switch text! {
             //handle things that aren't numbers
@@ -183,7 +186,7 @@ class ViewController: UIViewController {
     
     func animateDown(object : AnyObject){
         let animation = CGAffineTransformMakeScale(0.8, 0.8)
-        let button = object as UIButton
+        let button = object as! UIButton
 
         UIView.animateWithDuration(0.1, delay: 0, options: nil, animations: {
             
@@ -203,7 +206,7 @@ class ViewController: UIViewController {
     
     func animateUp(object : AnyObject){
         
-        let button = object as UIButton
+        let button = object as! UIButton
         let unAnimate = CGAffineTransformMakeScale(1, 1)
         UIView.animateWithDuration(0.05, delay: 0, options: nil, animations: {
             
